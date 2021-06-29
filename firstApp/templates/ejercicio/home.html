@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+    .container {
+        background: rgba(0, 128, 0, 0.3);
+        border-style: solid;
+        border-color: black;
+        border-radius: 20px;
+    }
+    
+    body {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .aplas {
+        padding-left: 430px;
+        padding-right: 430px;
+    }
+    
+    .entrada,
+    input {
+        border-radius: 15%;
+    }
+    
+    .idea1 {
+        padding-left: 80px;
+    }
+    
+    .idea {
+        text-align: left;
+    }
+</style>
+<br>
+<div class="aplas">
+    <div class="container text-center ">
+
+        <br>
+        <h1>Calculator with Django </h1>
+        <h2>{{ nombre }}</h2>
+
+        <form action="{% url 'second' %}">
+            <div class="entrada">
+                <input name="number1" type="number">
+                <p>First number</p>
+                <input name="number2" type="number">
+                <p>Second number</p>
+            </div>
+            <p>--- Seleccione una opción ---</p>
+            <div class="idea1">
+                <div class="idea">
+
+                    <input type="checkbox" name="Suma">Suma
+                    <br>
+                    <input type="checkbox" name="Resta">Resta"
+                    <br>
+                    <input type="checkbox" name="Multiplicacion">Multiplicación
+                    <br>
+                    <input type="checkbox" name="Division">División
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <input class="btn btn-warning" type="submit" value="Avanzar">
+        </form>
+    </div>
+</div>
