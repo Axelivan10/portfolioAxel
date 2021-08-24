@@ -21,4 +21,22 @@ def second_page(request):
 
 
     return render(request,'ejercicio/second.html',{'second':resul})
-    
+
+
+def index(request):
+    return render( request,'ejercicio/index.html')
+
+def portafolio1(request):
+    return render( request,'ejercicio/portfolio1.html')
+
+def portafolio2(request):
+    return render( request,'ejercicio/portfolio2.html')
+
+def portafolio3(request):
+    return render( request,'ejercicio/portfolio3.html')
+   
+def portafolio4(request):
+    return render( request,'ejercicio/portfolio4.html')
+   
+   
+   
